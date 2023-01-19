@@ -9,7 +9,7 @@ Both combined is too large so there the link to the dataset:- [FINAL DATASET](ht
 ```
 Total Reviews = 960049
 Target Classes - POSITIVE, NEGATIVE and NEURAL
-
+SIZE - 169MB
 Distribution-
 
 Positive    743829
