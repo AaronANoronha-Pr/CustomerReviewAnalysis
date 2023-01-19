@@ -1,6 +1,8 @@
 # Project Exhibition II - Customer review analysis
+BUILDING NATURAL LANGUAGE MODELS TO EXTRACT INSIGHTS FROM AMAZON REVIEWS
 
-This project is a machine learning solution that addresses the task of performing sentiment analysis on customer reviews. The goal of the project is to build a model that can classify customer reviews as positive, negative, or neutral based on their text. The project provides a clean and well-organized codebase, as well as detailed documentation and explanations for the various NLP techniques used.
+This project is a machine learning solution that addresses the task of performing sentiment analysis on customer reviews. The goal of the project is to build a model that can classify customer reviews as positive, negative, or neutral based on their text. We will be using different NLP model to extract insights from the reviews.
+The project provides a clean and well-organized codebase, as well as detailed documentation and explanations for the various NLP techniques used.
 
 ### Team Members
 -   Aaron Antony Noronha 21BAI10296
