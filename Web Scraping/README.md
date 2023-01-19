@@ -9,3 +9,5 @@ URL= "https://www.amazon.in/product-reviews/B08FB2LNSZ/ref=cm_cr_getr_d_paging_b
 scraper = WebScraper(URL,500)
 scraper.initialize_scraper()
 ```
+
+**Note** - Scraped data is in [Data Dump](https://github.com/AaronANoronha/CustomerReviewAnalysis/tree/main/Data/Data%20Dump)
