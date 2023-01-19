@@ -10,5 +10,5 @@ available resources.
 
 
 S no. | Experiement | Result | Conlusion | Link 
---- | --- | --- | --- |--- |--- 
+--- | --- | --- | --- |--- |--- |
 1 | Using different embedding layers present in TF-Hub | TBD | TBD | TBD 
