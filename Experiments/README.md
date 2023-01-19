@@ -11,4 +11,4 @@ available resources.
 
 S no. | Experiement | Result | Conlusion | Link 
 --- | --- | --- | --- |--- 
-1 | Using different embedding layers present in TF-Hub | TBD | TBD | TBD 
+1 | universal-sentence-encoder-large | accuracy: 0.9465 val_accuracy: 0.9356 | TBD | TBD 
