@@ -9,4 +9,10 @@ Both combined is too large so there the link to the dataset:-
 ```
 Total Reviews = 960049
 Target Classes - POSITIVE, NEGATIVE and NEURAL
+
+Distribution-
+
+Positive    743829
+Neural      131110
+Negative     85110
 ```
