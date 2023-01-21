@@ -7,7 +7,7 @@ The project provides a clean and well-organized codebase, as well as detailed do
 -   Aaron Antony Noronha 21BAI10296
 -   [Anshu Kushwah](https://www.linkedin.com/in/anshu-kushwah-59851121b/) 21BAI10141
 -   Abhit Yadav 21BAI10397
--   Shambavi Pandey 21BAI10453
+-   Shambhavi Pandey 21BAI10453
 -   Simran Namdev 21BAI10472
 
 ### Abstract 
