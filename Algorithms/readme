@@ -1,6 +1,1 @@
-The dataset has about 960,049 rows of data. There are some null values. I simply will get rid of those null values.
-As the dataset is pretty big, it takes a lot of time to run some machine learning algorithm. So, I used 5% of the data for this project which is still 48,002 data. The sample was representative.
-If the rating is 1 and 2 that will be considered a bad review or negative review. And if the review is 3, 4, and 5, the review will be considered as a good review or positive review. So, I added a new column named ‘sentiments’ to the dataset that will use 1 for the negative reviews and 2 for the nutral reviews and three for positive reviews.
 
-I will use a count vectorizer to vectorize the text data in the review column (training feature for this project) and then use three different classification models from scikit-learn models.The classifiers that will be used here are Logistic Regression, Support Vector Machine, and K Nearest Neighbor Classifier.
-Then will repeat the process with TF-IDF vectorizer using three ML algorithms Logistic Regression, Support Vector Machine, and K Nearest Neighbor Classifier. 
