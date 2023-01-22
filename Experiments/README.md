@@ -11,4 +11,4 @@ available resources.
 
 S no. | Experiement | Result | Conlusion | Link 
 --- | --- | --- | --- |--- 
-1 | universal-sentence-encoder-large | accuracy: 0.9358, val_accuracy: 0.9302| TBD | [Notebook](https://github.com/AaronANoronha/CustomerReviewAnalysis/blob/main/Experiments/Universal_Sentence_Encoder_%2B_2_layer.ipynb) 
+1 | universal-sentence-encoder-large | accuracy: 0.9358, val_accuracy: 0.9302| Generalized Model, working well | [Notebook](https://github.com/AaronANoronha/CustomerReviewAnalysis/blob/main/Experiments/Universal_Sentence_Encoder_%2B_2_layer.ipynb) 
