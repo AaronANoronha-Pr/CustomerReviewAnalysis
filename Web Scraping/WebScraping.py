@@ -1,3 +1,4 @@
+import concurrent.futures
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -30,23 +31,29 @@ class WebScraper:
 
   def scrape_review(self):
     """method extracts the title, body and rating of reviews from the scraped HTML"""
-    
+    # adding new list to store the responses of the threads
+    responses = []
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        for page in range(self.total_pages):
+            # submitting the request as a thread
+            future = executor.submit(requests.get, f"{self.url}+{page+1}")
+            # storing the future object in the list
+            responses.append(future)
     body = []
     title = []
     rating = []
-    for page in range(self.total_pages):
+    for future in concurrent.futures.as_completed(responses):
+        # getting the response from the thread
+        response = future.result()
+        soup = BeautifulSoup(response.text,'html.parser')
+        reviews = soup.find_all('div',{'data-hook':'review'})
 
-      response = requests.get(f"{self.url}+{page+1}")
-      soup = BeautifulSoup(response.text,'html.parser')
-      reviews = soup.find_all('div',{'data-hook':'review'})
-
-      for review in reviews:
-        body.append(review.find('a',{'data-hook':'review-title'}).text.strip())
-        title.append(review.find('span',{'data-hook':'review-body'}).text.strip())
-        rating.append(float(review.find('i',{'data-hook':"review-star-rating"}).text.replace('out of 5 stars','').strip()))
+        for review in reviews:
+          body.append(review.find('a',{'data-hook':'review-title'}).text.strip())
+          title.append(review.find('span',{'data-hook':'review-body'}).text.strip())
+          rating.append(float(review.find('i',{'data-hook':"review-star-rating"}).text.replace('out of 5 stars','').strip()))
 
     return body,title,rating
-
 
   def annotate_sentiment(self,rating:List)->List:
     """method takes the rating of the reviews and annotates them as Positive, Negative or Neutral"""
@@ -60,7 +67,6 @@ class WebScraper:
       else:
         sentiment.append("Negative")
     return sentiment
-
   def makeDataFrame(self,title:List,body:List,rating:List,sentiment:List)->pd.DataFrame:
     """method takes the title, body, rating, sentiment and makes a pandas dataframe."""
     
@@ -91,4 +97,3 @@ To perform web-scraping add the url, create an instance of the WebScraper class 
 """
 scraper = WebScraper(URL,500)
 scraper.initialize_scraper()
-# Runtime ~ 3 min
