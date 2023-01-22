@@ -19,7 +19,7 @@ The customer review analysis is a crucial task for any business that wants to un
 Customers leave tons of reviews, advice, complaints in a business portal. Reading and understanding all these take a lot of manual effort, time, and costs. Can we develop a platform that can summarise different relevant metrics for our business like most recent reviews, Overall rating, distribution of sentiments, trending keywords, and so on?
 
 
-![alt text](https://github.com/AaronANoronha/CustomerReviewAnalysis/blob/main/img/Project%20workflow.png?raw=true)
+![alt text](https://github.com/AaronANoronha/CustomerReviewAnalysis/blob/main/img/Project%20workflow.png)
 
 
 ### Proposed Solution
