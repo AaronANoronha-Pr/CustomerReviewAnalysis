@@ -16,6 +16,10 @@ Web scraping is the process of extracting data from websites. It is typically do
 - Use the `makeDataFrame` method to take the title, body, rating, sentiment, and make a pandas dataframe.
 - Use the `saveData` method to save the dataframe to a CSV file.
 
+## Time Taken
+- Wihtout multithreading - 207 seconds
+- 2 core multithreading - 57 seconds
+- 32 core multithreading - 32 seconds
 
 To perform web-scraping add the url, create an instance of the WebScraper class and pass in the URL and total number of pages to be scraped as argument and calls the **initialize_scraper** method to start the scraping process.
 
