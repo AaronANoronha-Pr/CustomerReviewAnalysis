@@ -27,3 +27,14 @@ The task is to perform sentiment analysis on customer reviews for a product. The
 ### Data
 
 The dataset used in this project is a combination of web scraped data and already present big dataset of customer reviews for a specific product. The web scraped data was collected by using web scraping techniques and pre-processed to remove any irrelevant information. The combined dataset was then pre-processed to format it into a format that can be easily used for training and evaluating the model. The dataset is split into training and test sets, with a ratio of 80:20.
+
+
+### Data Processing
+In this process we'll  preparing data for analysis by removing or modifying  the data that is irrelevant or duplicated.
+Using following steps:
+Cleaning
+Tokenization
+Stop words removal("English word")
+Lemmatization
+Stemming
+
