@@ -31,10 +31,11 @@ The dataset used in this project is a combination of web scraped data and alread
 
 ### Data Processing
 In this process we'll  preparing data for analysis by removing or modifying  the data that is irrelevant or duplicated.
+
 Using following steps:
-Cleaning
-Tokenization
-Stop words removal("English word")
-Lemmatization
-Stemming
+Cleaning,
+Tokenization,
+Stop words removal("English word"),
+Lemmatization,
+Stemming.
 
