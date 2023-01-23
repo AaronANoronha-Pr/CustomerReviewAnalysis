@@ -25,3 +25,4 @@ The classifiers that we have used are :
 |Logistic Regression with TF-IDF Vectoriser|0.8337569267947169|
 |SVM with TF-IDF Vectoriser|0.8309237115120204|
 |KNN with TF-IDF Vectoriser|0.7803424857297613|
+|Neural Network + word Embedding | 0.9375694857215595
