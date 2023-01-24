@@ -25,6 +25,6 @@ The classifiers that we have used are :
 |Logistic Regression with TF-IDF Vectoriser|0.8327986333902754|
 |SVM with TF-IDF Vectoriser|0.8288404649806258|
 |KNN with TF-IDF Vectoriser|0.7803424857297613|
-|Neural Network + word Embedding | 0.9375694857215595|
 |Random Forest|0.718|
 |Naive Bayes|0.7765509770426232|
+|Neural Network + word Embedding | 0.9375694857215595|
